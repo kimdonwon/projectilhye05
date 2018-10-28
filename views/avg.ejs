@@ -1,0 +1,20 @@
+
+<html>
+  <head>
+  <title>평균</title>
+  </head>
+  <body>
+    <div id='ts'></div>
+    <div id='ts2'></div>
+
+
+    <script>
+    var todayavg = JSON.parse('<%- JSON.stringify(todayavg) %>');
+    var yesterdayavg = JSON.parse('<%- JSON.stringify(yesterdayavg) %>');
+    document.getElementById('ts').innerHTML=todayavg;
+    document.getElementById('ts2').innerHTML=yesterdayavg;
+
+    </script>
+
+  </body>
+</html>
